@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
     margin: 0;
     padding: 0;
 }
@@ -9,9 +9,10 @@ body {
     margin: 40px auto;
     background: #fff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     text-align: center;
+    border: 2px solid #a7c7e7;
 }
 .profile-img {
     width: 120px;
@@ -19,13 +20,25 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    border: 3px solid #a7c7e7;
 }
 h1 {
-    color: #333;
+    color: #2a5298;
+    margin-bottom: 10px;
 }
 h2 {
-    color: #555;
+    color: #1e3c72;
     margin-top: 0;
+    margin-bottom: 10px;
+}
+p {
+    color: #333;
+    font-size: 1.1em;
+}
+hr {
+    border: none;
+    border-top: 2px solid #a7c7e7;
+    margin: 24px 0;
 }
 ul {
     list-style: none;
@@ -36,10 +49,12 @@ ul li {
     margin: 0 10px;
 }
 ul li a {
-    color: #0077cc;
+    color: #2a5298;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s;
 }
 ul li a:hover {
+    color: #1e3c72;
     text-decoration: underline;
 }
