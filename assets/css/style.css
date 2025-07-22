@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #333;
+}
+h2 {
+    color: #555;
+    margin-top: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+ul li a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
