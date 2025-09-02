@@ -3,24 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Anirban Ghosh</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: 'Inter', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .main-flex {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0;
+            border: none;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #222;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+        .links {
+            display: flex;
+            gap: 32px;
+            margin-top: 40px;
+        }
+        .links a {
+            color: #2a5298;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-bottom: 1.5px solid #a7c7e7;
+            transition: border 0.2s, color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .links a:hover {
+            color: #1e3c72;
+            border-bottom: 2px solid #2a5298;
+        }
+        @media (max-width: 900px) {
+            .main-flex { flex-direction: column; gap: 24px; }
+            .details { align-items: center; text-align: center; }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1rem; }
+            .profile-img { width: 90px; height: 90px; }
+            .links { gap: 18px; }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>About Me</h1>
-        <hr>
+    <div class="main-flex">
         <img src="../assets/images/DSC_4785.jpeg" alt="Anirban Ghosh" class="profile-img">
-        <h2>Anirban Ghosh</h2>
-        <hr>
-        <p>👋 Hi, I’m @ianirbanghosh 👀 I’m interested in research at the interface of Cognitive Science and Machine Learning 🌱 I’m currently working as an Engineer at Deutsch Bank 💞️ I’m looking to collaborate on large-scale Computer Vision models 📫 Reach me via email at anirbang93@gmail.com.</p>
-        <hr>
-        <p>Feel free to connect with me:</p>
-        <ul>
-            <li><a href="mailto:anirbang93@gmail.com">Email</a></li>
-            <li><a href="https://github.com/theNinthElement">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/anirban-ghosh-83523954/">LinkedIn</a></li>
-        </ul>
+        <div class="details">
+            <h1>Anirban Ghosh</h1>
+            <div class="subtitle">
+                👋 Hi, I’m @ianirbanghosh 👀 I’m interested in research at the interface of Cognitive Science and Machine Learning. <br>
+                🌱 I’m currently working as an Engineer at Deutsch Bank <br> 
+                💞️ I’m looking to collaborate on large-scale Computer Vision models. <br> 
+                📫 Reach me via email or visit my socials.<br>
+                Researcher at the interface of Cognitive Science & Machine Learning.<br>
+                Engineer at Deutsche Bank.<br>
+                Interested in large-scale Computer Vision models. <br>                
+            </div>
+            <div class="links">
+                <a href="mailto:anirbang93@gmail.com">
+                    <img src="../assets/images/email.png" alt="Email" style="width:20px;height:20px;vertical-align:middle;">Email
+                </a>
+                <a href="https://github.com/theNinthElement" target="_blank">
+                    <img src="../assets/images/github.png" alt="GitHub" style="width:20px;height:20px;vertical-align:middle;">GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank">
+                    <img src="../assets/images/linkedin.svg" alt="LinkedIn" style="width:20px;height:20px;vertical-align:middle;">LinkedIn
+                </a>
+                <a href="../blog/index.html" target="_blank">
+                    <img src="../assets/images/blog.svg" alt="Blog" style="width:20px;height:20px;vertical-align:middle;">Blog
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
