@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Anirban Ghosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark:  '#1e3c72',
+              mid:   '#2a5298',
+              light: '#a7c7e7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-700">
+
+  <!-- NAV -->
+  <header class="bg-white border-b border-brand-light sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-brand-dark font-bold text-lg tracking-tight hover:text-brand-mid transition-colors">
+        Anirban Ghosh
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html"    class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Home</a>
+        <a href="about.html"    class="text-gray-600 hover:text-brand-mid font-medium transition-colors">About</a>
+        <a href="projects.html" aria-current="page" class="text-brand-mid font-semibold border-b-2 border-brand-light pb-0.5">Projects</a>
+        <a href="blog.html"     class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Blog</a>
+        <a href="contact.html"  class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="mailto:anirbang93@gmail.com" aria-label="Email">
+          <img src="assets/images/email.png" alt="Email" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-brand-dark focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="icon-open"  stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="icon-close" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" class="hidden"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-brand-light bg-white px-6 py-4 flex flex-col gap-4">
+      <a href="index.html"    class="text-gray-600 hover:text-brand-mid font-medium">Home</a>
+      <a href="about.html"    class="text-gray-600 hover:text-brand-mid font-medium">About</a>
+      <a href="projects.html" class="text-brand-mid font-semibold">Projects</a>
+      <a href="blog.html"     class="text-gray-600 hover:text-brand-mid font-medium">Blog</a>
+      <a href="contact.html"  class="text-gray-600 hover:text-brand-mid font-medium">Contact</a>
+      <div class="flex gap-4 pt-2 border-t border-gray-100">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"><img src="assets/images/github.svg"   alt="GitHub"   class="w-5 h-5 opacity-70"></a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener"><img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70"></a>
+        <a href="mailto:anirbang93@gmail.com"><img src="assets/images/email.png" alt="Email" class="w-5 h-5 opacity-70"></a>
+      </div>
+    </div>
+  </header>
+  <!-- END NAV -->
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- PAGE TITLE -->
+    <div class="mb-12">
+      <h1 class="text-3xl font-bold text-brand-dark mb-2">Projects</h1>
+      <div class="w-12 h-1 bg-brand-light rounded mb-4"></div>
+      <p class="text-gray-500 text-base max-w-2xl">
+        A selection of research and engineering projects spanning medical imaging,
+        computer vision, and agentic AI systems.
+      </p>
+    </div>
+
+    <!-- PROJECT CARDS -->
+    <div class="grid grid-cols-1 gap-8">
+
+      <!-- Project 1: 4D Medical Image Compression -->
+      <article class="bg-white rounded-2xl border border-brand-light shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden">
+        <div class="p-8">
+          <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="text-xs font-semibold uppercase tracking-wider text-brand-mid bg-blue-50 px-2.5 py-1 rounded-full border border-brand-light">
+                Research · Master's Thesis
+              </span>
+              <h2 class="text-xl font-bold text-brand-dark mt-3">4D Medical Image Compression</h2>
+            </div>
+            <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"
+               class="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-brand-mid transition-colors flex-shrink-0">
+              <img src="assets/images/github.svg" alt="" class="w-4 h-4">
+              View on GitHub
+            </a>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Developed a novel compression algorithm for 4D medical imaging data (e.g. 4D MRI/CT sequences)
+            as part of my Master's thesis. The method achieved an
+            <span class="font-semibold text-gray-800">18% improvement in compression ratio over NJPEG 2000</span>
+            while maintaining diagnostic image quality — reducing storage and transmission overhead for
+            clinical imaging pipelines.
+          </p>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Python</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Medical Imaging</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Image Compression</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">4D MRI</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Computer Vision</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Medical Computer Vision -->
+      <article class="bg-white rounded-2xl border border-brand-light shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden">
+        <div class="p-8">
+          <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="text-xs font-semibold uppercase tracking-wider text-brand-mid bg-blue-50 px-2.5 py-1 rounded-full border border-brand-light">
+                Healthcare AI · Computer Vision
+              </span>
+              <h2 class="text-xl font-bold text-brand-dark mt-3">Medical Image Tracking &amp; Segmentation</h2>
+            </div>
+            <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"
+               class="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-brand-mid transition-colors flex-shrink-0">
+              <img src="assets/images/github.svg" alt="" class="w-4 h-4">
+              View on GitHub
+            </a>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Built a computer vision pipeline for <span class="font-semibold text-gray-800">tracking and segmentation
+            of structures in clinical medical images</span>. The system enables precise delineation of anatomical
+            regions across imaging sequences, supporting downstream diagnostic and treatment planning workflows
+            in a healthcare setting.
+          </p>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Python</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">OpenCV</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">TensorFlow</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Image Segmentation</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Object Tracking</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Healthcare AI</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Agentic SDLC Pipeline -->
+      <article class="bg-white rounded-2xl border border-brand-light shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 overflow-hidden">
+        <div class="p-8">
+          <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="text-xs font-semibold uppercase tracking-wider text-brand-mid bg-blue-50 px-2.5 py-1 rounded-full border border-brand-light">
+                Agentic AI · DevOps
+              </span>
+              <h2 class="text-xl font-bold text-brand-dark mt-3">Agentic SDLC Pipeline</h2>
+            </div>
+            <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"
+               class="flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-brand-mid transition-colors flex-shrink-0">
+              <img src="assets/images/github.svg" alt="" class="w-4 h-4">
+              View on GitHub
+            </a>
+          </div>
+
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Designed and built an <span class="font-semibold text-gray-800">LLM-orchestrated software development
+            lifecycle pipeline</span> that automatically provisions isolated sandboxes for each deployment and
+            test run. The agentic system manages environment setup, test execution, and teardown — reducing
+            manual DevOps overhead and enabling safer, reproducible deployments.
+          </p>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">LLMs</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">LangChain</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Python</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Agentic Systems</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Sandboxing</span>
+            <span class="text-xs font-medium px-3 py-1 rounded-full bg-blue-50 text-brand-dark border border-brand-light">CI/CD</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- MORE COMING -->
+    <div class="mt-12 text-center">
+      <p class="text-gray-400 text-sm">More projects in progress — check back soon or</p>
+      <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 mt-2 text-brand-mid font-medium hover:text-brand-dark transition-colors text-sm">
+        <img src="assets/images/github.svg" alt="" class="w-4 h-4">
+        browse all repositories on GitHub
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-light bg-white mt-16">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <span>&copy; 2026 Anirban Ghosh</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener" class="hover:text-brand-mid transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener" class="hover:text-brand-mid transition-colors">LinkedIn</a>
+        <a href="mailto:anirbang93@gmail.com" class="hover:text-brand-mid transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn  = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen  = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

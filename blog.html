@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Anirban Ghosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark:  '#1e3c72',
+              mid:   '#2a5298',
+              light: '#a7c7e7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-700">
+
+  <!-- NAV -->
+  <header class="bg-white border-b border-brand-light sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-brand-dark font-bold text-lg tracking-tight hover:text-brand-mid transition-colors">
+        Anirban Ghosh
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html"    class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Home</a>
+        <a href="about.html"    class="text-gray-600 hover:text-brand-mid font-medium transition-colors">About</a>
+        <a href="projects.html" class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Projects</a>
+        <a href="blog.html"     aria-current="page" class="text-brand-mid font-semibold border-b-2 border-brand-light pb-0.5">Blog</a>
+        <a href="contact.html"  class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="mailto:anirbang93@gmail.com" aria-label="Email">
+          <img src="assets/images/email.png" alt="Email" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-brand-dark focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="icon-open"  stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="icon-close" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" class="hidden"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-brand-light bg-white px-6 py-4 flex flex-col gap-4">
+      <a href="index.html"    class="text-gray-600 hover:text-brand-mid font-medium">Home</a>
+      <a href="about.html"    class="text-gray-600 hover:text-brand-mid font-medium">About</a>
+      <a href="projects.html" class="text-gray-600 hover:text-brand-mid font-medium">Projects</a>
+      <a href="blog.html"     class="text-brand-mid font-semibold">Blog</a>
+      <a href="contact.html"  class="text-gray-600 hover:text-brand-mid font-medium">Contact</a>
+      <div class="flex gap-4 pt-2 border-t border-gray-100">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"><img src="assets/images/github.svg"   alt="GitHub"   class="w-5 h-5 opacity-70"></a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener"><img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70"></a>
+        <a href="mailto:anirbang93@gmail.com"><img src="assets/images/email.png" alt="Email" class="w-5 h-5 opacity-70"></a>
+      </div>
+    </div>
+  </header>
+  <!-- END NAV -->
+
+  <!-- PLACEHOLDER CONTENT -->
+  <main class="max-w-5xl mx-auto px-6 py-16">
+
+    <div class="mb-12">
+      <h1 class="text-3xl font-bold text-brand-dark mb-2">Blog</h1>
+      <div class="w-12 h-1 bg-brand-light rounded"></div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center py-24 text-center">
+      <!-- Icon -->
+      <div class="w-16 h-16 rounded-full bg-blue-50 border-2 border-brand-light flex items-center justify-center mb-6">
+        <img src="assets/images/blog.svg" alt="" class="w-8 h-8 opacity-60">
+      </div>
+
+      <h2 class="text-xl font-semibold text-brand-dark mb-3">Coming Soon</h2>
+      <p class="text-gray-500 max-w-md leading-relaxed mb-8">
+        I'm working on posts about AI, Computer Vision, Healthcare AI, and the
+        intersection of Cognitive Science and Machine Learning. Check back soon.
+      </p>
+
+      <!-- Topics preview -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <span class="text-xs font-medium px-3 py-1.5 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Computer Vision</span>
+        <span class="text-xs font-medium px-3 py-1.5 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Large Language Models</span>
+        <span class="text-xs font-medium px-3 py-1.5 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Healthcare AI</span>
+        <span class="text-xs font-medium px-3 py-1.5 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Cognitive Science</span>
+        <span class="text-xs font-medium px-3 py-1.5 rounded-full bg-blue-50 text-brand-dark border border-brand-light">Agentic Systems</span>
+      </div>
+
+      <a href="index.html"
+         class="border-2 border-brand-mid text-brand-mid hover:bg-brand-mid hover:text-white font-semibold px-6 py-2.5 rounded-lg transition-all">
+        Back to Home
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-light bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <span>&copy; 2026 Anirban Ghosh</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener" class="hover:text-brand-mid transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener" class="hover:text-brand-mid transition-colors">LinkedIn</a>
+        <a href="mailto:anirbang93@gmail.com" class="hover:text-brand-mid transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn  = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen  = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

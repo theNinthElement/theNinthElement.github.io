@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Anirban Ghosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark:  '#1e3c72',
+              mid:   '#2a5298',
+              light: '#a7c7e7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-700">
+
+  <!-- NAV -->
+  <header class="bg-white border-b border-brand-light sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-brand-dark font-bold text-lg tracking-tight hover:text-brand-mid transition-colors">
+        Anirban Ghosh
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="index.html"    class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Home</a>
+        <a href="about.html"    aria-current="page" class="text-brand-mid font-semibold border-b-2 border-brand-light pb-0.5">About</a>
+        <a href="projects.html" class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Projects</a>
+        <a href="blog.html"     class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Blog</a>
+        <a href="contact.html"  class="text-gray-600 hover:text-brand-mid font-medium transition-colors">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="assets/images/github.svg" alt="GitHub" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+        <a href="mailto:anirbang93@gmail.com" aria-label="Email">
+          <img src="assets/images/email.png" alt="Email" class="w-5 h-5 opacity-70 hover:opacity-100 transition-opacity">
+        </a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-brand-dark focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path id="icon-open"  stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          <path id="icon-close" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" class="hidden"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-brand-light bg-white px-6 py-4 flex flex-col gap-4">
+      <a href="index.html"    class="text-gray-600 hover:text-brand-mid font-medium">Home</a>
+      <a href="about.html"    class="text-brand-mid font-semibold">About</a>
+      <a href="projects.html" class="text-gray-600 hover:text-brand-mid font-medium">Projects</a>
+      <a href="blog.html"     class="text-gray-600 hover:text-brand-mid font-medium">Blog</a>
+      <a href="contact.html"  class="text-gray-600 hover:text-brand-mid font-medium">Contact</a>
+      <div class="flex gap-4 pt-2 border-t border-gray-100">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener"><img src="assets/images/github.svg"   alt="GitHub"   class="w-5 h-5 opacity-70"></a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener"><img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-5 h-5 opacity-70"></a>
+        <a href="mailto:anirbang93@gmail.com"><img src="assets/images/email.png" alt="Email" class="w-5 h-5 opacity-70"></a>
+      </div>
+    </div>
+  </header>
+  <!-- END NAV -->
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+
+    <!-- PAGE TITLE -->
+    <div class="mb-12">
+      <h1 class="text-3xl font-bold text-brand-dark mb-2">About Me</h1>
+      <div class="w-12 h-1 bg-brand-light rounded"></div>
+    </div>
+
+    <!-- BIO + PHOTO -->
+    <div class="flex flex-col md:flex-row gap-12 mb-16 items-start">
+
+      <!-- Photo -->
+      <div class="flex-shrink-0 flex flex-col items-center gap-4">
+        <img src="assets/images/DSC_4785.jpeg" alt="Anirban Ghosh"
+             class="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-brand-light">
+        <a href="assets/resume/anirban_ghosh_resume.pdf" download
+           class="bg-brand-mid hover:bg-brand-dark text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors w-full text-center">
+          Download Resume
+        </a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener"
+           class="border-2 border-brand-mid text-brand-mid hover:bg-brand-mid hover:text-white text-sm font-semibold px-5 py-2 rounded-lg transition-all w-full text-center">
+          LinkedIn Profile
+        </a>
+      </div>
+
+      <!-- Bio text -->
+      <div class="flex-1">
+        <h2 class="text-xl font-semibold text-brand-dark mb-4">
+          AI &amp; Computer Vision Engineer &nbsp;|&nbsp; Researcher
+        </h2>
+        <div class="space-y-4 text-gray-600 leading-relaxed">
+          <p>
+            I'm an AI and Computer Vision engineer currently working at
+            <span class="font-medium text-gray-800">Deutsche Bank</span>, where I apply machine learning
+            and engineering at the intersection of <span class="font-medium text-gray-800">Fintech</span>
+            and intelligent systems.
+          </p>
+          <p>
+            My research background sits at the interface of
+            <span class="font-medium text-gray-800">Cognitive Science and Machine Learning</span> —
+            particularly how insights from human perception can inform the design of more robust
+            computer vision models. My Master's thesis focused on compression of 4D medical images,
+            achieving an 18% improvement over NJPEG 2000.
+          </p>
+          <p>
+            I'm deeply interested in <span class="font-medium text-gray-800">Healthcare AI</span> —
+            building tools that make clinical imaging workflows faster, smarter, and more accessible.
+            I stay close to the frontier: LLMs, agentic pipelines, and large-scale vision models are
+            spaces I actively build in.
+          </p>
+          <p>
+            I'm always working on something new — whether it's a research prototype, an open-source
+            tool, or an experiment at the edge of what's possible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <div class="mb-16">
+      <h2 class="text-2xl font-bold text-brand-dark mb-6">Experience</h2>
+      <div class="space-y-6">
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-3 h-3 rounded-full bg-brand-mid mt-1.5 flex-shrink-0"></div>
+            <div class="w-0.5 bg-brand-light flex-1 mt-1"></div>
+          </div>
+          <div class="pb-6">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-semibold text-gray-800">Engineer</span>
+              <span class="text-gray-400">·</span>
+              <span class="text-brand-mid font-medium">Deutsche Bank</span>
+              <span class="text-xs text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">Current</span>
+            </div>
+            <p class="text-gray-500 text-sm">Fintech &amp; Applied AI · Frankfurt / London</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-3 h-3 rounded-full bg-brand-light mt-1.5 flex-shrink-0"></div>
+            <div class="w-0.5 bg-brand-light flex-1 mt-1"></div>
+          </div>
+          <div class="pb-6">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-semibold text-gray-800">MSc Research</span>
+              <span class="text-gray-400">·</span>
+              <span class="text-brand-mid font-medium">4D Medical Image Compression</span>
+            </div>
+            <p class="text-gray-500 text-sm">Cognitive Science &amp; Machine Learning · Thesis research</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <div class="w-3 h-3 rounded-full bg-brand-light mt-1.5 flex-shrink-0"></div>
+          </div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="font-semibold text-gray-800">Independent Research &amp; Projects</span>
+            </div>
+            <p class="text-gray-500 text-sm">Healthcare AI · Agentic Systems · Computer Vision</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="mb-16">
+      <h2 class="text-2xl font-bold text-brand-dark mb-6">Skills &amp; Tech Stack</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+        <!-- Languages & Frameworks -->
+        <div class="bg-white rounded-xl border border-brand-light p-6 shadow-sm">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Languages &amp; Frameworks</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Python</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Java</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">TensorFlow</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">OpenCV</span>
+          </div>
+        </div>
+
+        <!-- AI & ML -->
+        <div class="bg-white rounded-xl border border-brand-light p-6 shadow-sm">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">AI &amp; ML</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Hugging Face</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">LLMs</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">LangChain</span>
+          </div>
+        </div>
+
+        <!-- Domains -->
+        <div class="bg-white rounded-xl border border-brand-light p-6 shadow-sm">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Domains</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Computer Vision</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Healthcare AI</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Fintech</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Agentic Systems</span>
+          </div>
+        </div>
+
+        <!-- Research Interests -->
+        <div class="bg-white rounded-xl border border-brand-light p-6 shadow-sm">
+          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Research Interests</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Cognitive Science</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Medical Imaging</span>
+            <span class="inline-block bg-blue-50 text-brand-dark text-sm font-medium px-3 py-1 rounded-full border border-brand-light">Large-scale CV Models</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-light bg-white">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <span>&copy; 2026 Anirban Ghosh</span>
+      <div class="flex gap-6">
+        <a href="https://github.com/theNinthElement" target="_blank" rel="noopener" class="hover:text-brand-mid transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/anirban-ghosh-83523954/" target="_blank" rel="noopener" class="hover:text-brand-mid transition-colors">LinkedIn</a>
+        <a href="mailto:anirbang93@gmail.com" class="hover:text-brand-mid transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn  = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const iconOpen  = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
